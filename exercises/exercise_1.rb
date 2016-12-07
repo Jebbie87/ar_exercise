@@ -13,14 +13,14 @@ store1 = Store.create(
   name: 'Burnaby',
   annual_revenue: 300000,
   mens_apparel: true,
-  womens_apparel: true
+  womens_apparel: false
 )
 
 store2 = Store.create(
   name: 'Richmond',
   annual_revenue: 1260000,
-  mens_apparel: false,
-  womens_apparel: true
+  mens_apparel: true,
+  womens_apparel: false
 )
 
 store3 = Store.create(
@@ -31,3 +31,5 @@ store3 = Store.create(
 )
 
 puts Store.count
+
+# puts store2.errors.full_messages
